@@ -3,34 +3,34 @@
   <head>
     <style>
       .selector {
-        background-color: #FBF3DB; /* Changed from light gray */
+        background-color: transparent; /* Changed to transparent */
         border: 1px solid #dadce0;
         color: #000;
-        font-size: 180%;
-        height: 40px;
-        padding: 1px 6px;
+        font-size: 90%; /* Adjusted size to be smaller */
+        height: 30px; /* Adjusted height to be smaller */
+        padding: 1px 4px; /* Reduced padding */
         text-align: center;
-        width: calc(3/5 * 197px); /* Adjusted width */
+        width: calc(1/2 * 197px); /* Adjusted width */
       }
       .unit {
-        font-family: Roboto,arial,sans-serif;
+        font-family: Roboto, arial, sans-serif;
         background-position-x: 95%;
         border-radius: 0 0 2px 2px;
         color: #000;
-        width: calc(3/5 * 211px); /* Adjusted width */
+        width: calc(1/2 * 211px); /* Adjusted width */
         margin-top: -1px;
       }
       .convert {
-        font-family: Roboto,arial,sans-serif;
+        font-family: Roboto, arial, sans-serif;
         color: #000;
         background-position-x: 98%;
-        width: calc(3/5 * 449px); /* Adjusted width */
+        width: calc(1/2 * 449px); /* Adjusted width */
         margin-bottom: 10px;
       }
       .sel {
         text-align-last: center !important;
-        font-family: Roboto,arial,sans-serif;
-        background: url(http://ssl.gstatic.com/ui/v1/disclosure/grey-disclosure-arrow-up-down.png) 100% no-repeat #FBF3DB; /* Changed from light gray */
+        font-family: Roboto, arial, sans-serif;
+        background: url(http://ssl.gstatic.com/ui/v1/disclosure/grey-disclosure-arrow-up-down.png) 100% no-repeat #f8f9fa; /* Kept as is */
         border: 1px solid #dadce0;
         font-size: 13px;
         line-height: 20px;
@@ -40,45 +40,46 @@
         appearance: none;
       }
       .equals {
-        font-family: Roboto,arial,sans-serif;
+        font-family: Roboto, arial, sans-serif;
         display: inline-block;
-        line-height: 44px;
-        width: calc(3/5 * 27px); /* Adjusted width */
+        line-height: 30px; /* Adjusted line height */
+        width: calc(1/2 * 27px); /* Adjusted width */
         text-align: center;
         font-size: 26px;
         color: #70757a;
-        padding-top: 10px;
+        padding-top: 5px; /* Reduced padding */
         vertical-align: top;
-        margin-left: -4px;
-        margin-right: -4px;
+        margin-left: -2px; /* Adjusted margins */
+        margin-right: -2px; /* Adjusted margins */
       }
     </style>
   </head>
   <body onload="onloadFunc()" style="background-color: transparent;"> <!-- Changed to transparent background -->
-    <div style="margin-right: auto;margin-left: auto;width: calc(3/5 * 652px);text-align:center;"> <!-- Adjusted width -->
-      <div style="line-height: 1.2;text-align: center;position: relative;padding: 20px 16px 24px;background-color: #FBF3DB;width: calc(3/5 * 618px);"> <!-- Changed from white and adjusted width -->
-      <select id="measurer" class="sel convert">
-        <option value="volumeUnits">Volume</option>
-        <option value="massUnits">Mass</option>
-        <option value="temperatureUnits">Temperature</option>
-      </select>
-      <br>
-      <div style="width: calc(3/5 * 211px); display: inline-block;"> <!-- Adjusted width -->
-        <input id="input" class="selector">
-        <select id="inVolUnits" class="unit sel">
+    <div style="margin-right: auto; margin-left: auto; width: calc(1/2 * 652px); text-align:center;"> <!-- Adjusted width -->
+      <div style="line-height: 1.2; text-align: center; position: relative; padding: 10px 8px 12px; background-color: #fff; width: calc(1/2 * 618px);"> <!-- Adjusted padding and width -->
+        <select id="measurer" class="sel convert">
+          <option value="volumeUnits">Volume</option>
+          <option value="massUnits">Mass</option>
+          <option value="temperatureUnits">Temperature</option>
         </select>
-      </div>
-      <div class="equals">
-        =
-      </div>
-      <div style="width: calc(3/5 * 211px); display: inline-block;"> <!-- Adjusted width -->
-        <input id="output" class="selector">
-        <select id="outVolUnits" class="unit sel">
+        <br>
+        <div style="width: calc(1/2 * 211px); display: inline-block;"> <!-- Adjusted width -->
+          <input id="input" class="selector">
+          <select id="inVolUnits" class="unit sel">
+          </select>
+        </div>
+        <div class="equals">
+          =
+        </div>
+        <div style="width: calc(1/2 * 211px); display: inline-block;"> <!-- Adjusted width -->
+          <input id="output" class="selector">
+          <select id="outVolUnits" class="unit sel">
           </select>
         </div>
       </div>
     </div>
   </body>
+
 
 
 
